@@ -1,6 +1,10 @@
 const express = require('express');
 const authRoute = require('./auth.route');
 const userRoute = require('./user.route');
+const dataRoute = require('./data.route');
+const teamRoute = require('./team.route');
+const achieveRoute = require('./achieve.route');
+const modelRoute = require('./model.route');
 const docsRoute = require('./docs.route');
 const config = require('../../config/config');
 
@@ -14,6 +18,22 @@ const defaultRoutes = [
   {
     path: '/users',
     route: userRoute,
+  },
+  {
+    path: '/data',
+    route: dataRoute,
+  },
+  {
+    path: '/team',
+    route: teamRoute,
+  },
+  {
+    path: '/achieve',
+    route: achieveRoute,
+  },
+  {
+    path: '/model',
+    route: modelRoute,
   },
 ];
 
