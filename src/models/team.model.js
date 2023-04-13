@@ -30,6 +30,7 @@ const timelineSchema = mongoose.Schema({
   type: String,
   date: String,
   description: String,
+  tags: [String],
 });
 
 const teamSchema = mongoose.Schema(
@@ -37,6 +38,8 @@ const teamSchema = mongoose.Schema(
     title: String,
     description: String,
     researchDirections: [String],
+    collaborationIntro: String,
+    contactInfo: String,
     members: [memberSchema],
     works: [workItemSchema],
     timeline: [timelineSchema],
